@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Desciption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let users of users;">
+        <td><p>{{users.id}}</p></td>
+        <td>{{users.title}}</td>
+        <td>{{users.body}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
